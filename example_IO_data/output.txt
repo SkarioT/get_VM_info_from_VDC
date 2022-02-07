@@ -1,0 +1,27 @@
+100000002             Lotus_replica-buyb
+100000002             Sqlsrv01-oB64
+100000001             Centos-Hytera-a2fV
+
+NOT_FOUND  CitrixADM-01-3AFb
+
+
+NOT_FOUND  CitrixADM-02-tXVz
+
+11111111              Bitrix-qxxs
+
+NOT_FOUND  exon-GfLs
+
+100000003             SRV-Nextcloud-bCYk
+100000004             SRV-SQL-S1-Joqc
+
+NOT_FOUND  UbuntuVM-gzZJ
+
+000000004             kafk12-8a2U
+
+NOT_FOUND  imp-gw2-qeB3
+
+100000005             winserver2019-DYjb
+100000006             jira-01-zCKy
+100000007             KSO-S120-cFPx
+100000008             hyper-v server-KfFP
+99999999              vse-9999999_001-esg_001 (682e01a8-cce0-41f9-bebb-0821cb701ad5)-0
