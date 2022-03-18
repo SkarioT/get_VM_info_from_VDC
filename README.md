@@ -1,22 +1,22 @@
 ### Features
 
-**get_VMs_vdc_names** - скрип позволяющий получить с vSphere  информацию, содержащую  информацию в виде пары значений:
+**get_VMs_vdc_names** - a script which allows you to get information from vSphere containing information in the form of a pair of values:
 
-**ИМЯ_ВМ <-> УНП\ИНН**
+**VM_NAMES <-> TIN_NAMES**
 
-Установка:
+Installation:
 `$ pip install -r requirements.txt`
 
-Данный скрип в первую очередь ориентирован для ускорения обработки инцидента, на пример - ребут хоста.
-Получаем список пострадавших ВМ. Закидываем их в файл** input.txt**
+This script is primarily designed to speed up handling an incident, for example, a host restart.
+We get the list of affected VMs. Throw them into file** input.txt**
 
 
-В результат работы скрипта, на выходе получим 1 или 4 файла:
+The script will result in 1 or 4 output files:
 
--**all_VMs.txt** - файл содержащий все ВМ с двух vSphere в сопоставленном виде: УНП     Имя_ВМ. Файл создаётся при любом условии.
+-**all_VMs.txt** - file containing all VMs from two vSphere hosts in mapped form: TIN Name_VM. File is created under any condition.
 
--**output.txt**  - файл содержащий результат поиска, по именам ВМ, на основе имён ВМ  находящихся в файле input.txt. Файл input.txt должен находится в той же директории где и скрипт.
+-**output.txt** - file containing search result, by VM names, based on VM names in input.txt file. Input.txt file must be located in the same directory as the script.
 
--**unp_all.txt**- файл содержащий все УНП полученные из имём ВМ находящихся в файле  **input.txt** Содержит дубликаты, т.к.  >=1 ВМ могут принадлежать одной организации.
+-**unp_all.txt**- file containing all TINs obtained from names of VMs located in **input.txt** Contains duplicates as >=1 VMs can belong to the same organization.
 
--**unp.txt** - файл содержащий все УНП полученные из имём ВМ находящихся в файле  **input.txt**. Не содержит дубликаты, файл подходит сразу для работы скрипта **Wiki3**
+-**unp.txt** - file containing all TINs received from VMs located in **input.txt** file. Does not contain duplicates, file is suitable for work of **Wiki3** script at once
